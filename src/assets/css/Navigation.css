@@ -1,0 +1,68 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:bisque;
+    /* background-color: rgb(255, 240, 196); */
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    /* box-shadow: 0rem 0.1rem 0.5rem 0rem grey; */
+    box-shadow: 0rem 0.1rem 1rem -0.25rem grey;
+    position: sticky;
+    top: 0;
+}
+
+nav .title {
+    font-size: 1.5rem;
+    margin: 0rem 0rem 0rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#nav-logo{
+    width: 6rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-size: 1.0rem;
+    font-family: 'Montserrat';
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: black;
+}
+
+nav .reserve {
+    /* padding: 0.3rem; */
+    /* font-size: rem; */
+    margin: 0rem 1rem 0rem 0rem;
+    /* text-decoration: none; */
+    /* color: black;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.25rem 0rem rgb(193, 172, 147); */
+}
+
+nav .reserve button{
+    padding: 0.2rem;
+    /* font-size: rem; */
+    font-family:'Montserrat';
+    font-size: 1.0625rem;
+    background-color: rgb(230, 241, 190);
+    border: 0.1rem;
+    letter-spacing: 0.05rem;
+    font-weight:100;
+    color: rgb(88, 77, 77);
+    /* color: rgb(77, 63, 63); */
+    /* text-decoration: none; */
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 0.5rem -0.125rem rgb(52, 46, 39);
+}
