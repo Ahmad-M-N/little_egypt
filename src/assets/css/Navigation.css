@@ -51,8 +51,8 @@ nav .reserve {
     box-shadow: 0rem 0rem 0.25rem 0rem rgb(193, 172, 147); */
 }
 
-nav .reserve button{
-    padding: 0.2rem;
+nav button{
+    padding: 0.5rem;
     /* font-size: rem; */
     font-family:'Montserrat';
     font-size: 1.0625rem;

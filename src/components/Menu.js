@@ -1,4 +1,4 @@
-import { Container, Box, Button } from "@mui/material";
+import { Container, Box, Button, Grid } from "@mui/material";
 import { Outlet, Link } from "react-router-dom";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -18,12 +18,24 @@ const menuSection = (sectionId, sectionHeader, items) => {
         <Container id={sectionId} style={{padding: 1 }}>
             <h2> {sectionHeader} </h2>
             {items.map((item, index) => (
-                <Box style={{lineHeight: "1.4em"}}>
+                <Box key={index} style={{lineHeight: "1.4em"}}>
                     <h3> {item.name} </h3>
                     <p> {item.price} </p>
-                    <br/>
+                    <br/>    
                 </Box>
             ))}
+        </Container>
+    );
+}
+
+const menuSectionCarded = (sectionId, sectionHeader, items) => {
+    return (
+        <Container id={sectionId} style={{padding: 1 }}>
+            <h2> {sectionHeader} </h2>
+            <Box display="flex" flexWrap="wrap" justifyContent="Center" sx={{gap: 6}}>
+              {items.map((item, index) => (
+                itemCard()))}
+            </Box>
         </Container>
     );
 }
@@ -62,10 +74,21 @@ function Menu(){
                 </Container>
             </div>
             <Outlet name="menu"/>
-                {menuSection("Specialities-section","Specialities", menuItems)}
-                {menuSection("Medditerainian-section","Medditerainian", menuItems)}
-                {menuSection("Drinks-section","Drinks", menuItems)}
-                {menuSection("Some-sample","Sample", menuItems)}
+            {/* <Container>
+              <Box display="flex" flexWrap="wrap" justifyContent="Center" sx={{gap: 6}}>
+                {itemCard()}
+                {itemCard()}
+                {itemCard()}
+                {itemCard()}
+                {itemCard()}
+                {itemCard()}
+              </Box>
+            </Container> */}
+            {menuSectionCarded("specialities-carded","Specialities", menuItems)}
+              {menuSection("Specialities-section","Specialities", menuItems)}
+              {menuSection("Medditerainian-section","Medditerainian", menuItems)}
+              {menuSection("Drinks-section","Drinks", menuItems)}
+              {menuSection("Some-sample","Sample", menuItems)}
         </div>
     );
 }
