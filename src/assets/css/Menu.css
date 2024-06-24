@@ -1,0 +1,36 @@
+.menu{
+    /* box-shadow: 0 0 15px 0 inset; */
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(222, 26, 81); */
+    /* background-color: rgb(231, 231, 231); */
+    justify-content: "center";
+    /* background-image: url("../images/menuEgyptBackground.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+.sectionHeader{
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    /* color: white; */
+    color: #ff6347;
+    text-decoration: underline;
+    text-decoration-style:wavy;
+    /* text-decoration-color: white; */
+    text-decoration-color: #cc9122;
+}
+
+#medditerainian-carded{
+    /* background-color: rgb(200, 197, 5);
+    background-image: url("../images/egyptLights.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+/* Card Styling */
+.card-header{
+    font-family:'Montserrat';
+    font-weight: lighter;
+}

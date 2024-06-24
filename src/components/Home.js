@@ -7,8 +7,11 @@ import HL from './HL.js';
 function Home(){
     return(
         <>
-            <div Class = "landingPageTopDiv"> 
-                <h1 className="page-header"> LITTLE EGYPT </h1>
+            <div className = "landingPageTopDiv">
+                <span className='home-header-block'>
+                    <h1 className="page-header"> J&A <br/>Little Egypt </h1><br/>
+                    <h2 className="tag-line"> Come for the food. Leave with an experience</h2>
+                </span>
             </div>
             <Menu/>
             <HL/>

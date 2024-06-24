@@ -1,5 +1,5 @@
 import {Link, NavLink} from "react-router-dom"
-import {Button} from "@mui/material"
+import {Container, Button} from "@mui/material"
 import LittleEgyptLogo from "../assets/images/LittleEgyptLogo.png"
 import "../assets/css/Navigation.css"
 import { Margin } from "@mui/icons-material"
@@ -21,7 +21,7 @@ function NavBar(){
             <NavLink to="/" className="title"> <img src={LittleEgyptLogo} id="nav-logo"/> </NavLink>
             <ul>
                 <li> 
-                    <NavLink to="/">Menu</NavLink>
+                    <a href="#menu">Menu </a>
                 </li>
                 <li> 
                     <NavLink to="/about">About</NavLink>
@@ -33,7 +33,7 @@ function NavBar(){
                     <NavLink to="/">Gallery</NavLink>
                 </li>
             </ul>
-            <div className="container">
+            <div style= {{marginRight: '1em'}}>
                 <button> Catering </button>
             </div>
         </nav>

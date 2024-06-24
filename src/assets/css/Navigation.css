@@ -2,12 +2,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:bisque;
+    /* background-color: #FAFA33; */
+    background-color: rgb(255, 243, 243);
+    /* background-color: rgb(228 239 228); */
+    /* background-color: rgb(234, 204, 172); */
+    /* background-color: rgb(222, 222, 203); */
+    /* background-color: rgb(227, 227, 51); */
     /* background-color: rgb(255, 240, 196); */
     border-radius: 0rem 0rem 0.5rem 0.5rem;
     /* box-shadow: 0rem 0.1rem 0.5rem 0rem grey; */
-    box-shadow: 0rem 0.1rem 1rem -0.25rem grey;
-    position: sticky;
+    box-shadow: 0 0 20px 1px #000000;
     top: 0;
 }
 
@@ -38,7 +42,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     border-radius: 0.5rem;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 nav .reserve {
@@ -56,7 +60,8 @@ nav button{
     /* font-size: rem; */
     font-family:'Montserrat';
     font-size: 1.0625rem;
-    background-color: rgb(230, 241, 190);
+    background-color: white;
+    /* background-color: rgb(230, 241, 190); */
     border: 0.1rem;
     letter-spacing: 0.05rem;
     font-weight:100;
